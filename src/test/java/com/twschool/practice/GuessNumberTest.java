@@ -41,4 +41,14 @@ public class GuessNumberTest {
         //then
         assertThat(result,is("0A0B"));
     }
+
+    @Test
+    public void should_return_1_A_2_B_given_2436() {
+        //given
+        String inputs = "2436";
+        //when
+        String result = answer.compare(inputs,num);
+        //then
+        assertThat(result,is("1A2B"));
+    }
 }
