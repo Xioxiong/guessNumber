@@ -26,6 +26,7 @@ public class Answer {
         result.append("A");
         result.append(pos);
         result.append("B");
+        System.out.println(result.toString());
         return result.toString();
     }
 }
