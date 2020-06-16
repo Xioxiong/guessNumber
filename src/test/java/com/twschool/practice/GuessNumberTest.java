@@ -60,4 +60,14 @@ public class GuessNumberTest {
         //then
         assertThat(result,is("0A1B"));
     }
+
+    @Test
+    public void should_return_1_A_0_B_given_1789() {
+        //given
+        String inputs = "1789";
+        //when
+        String result = answer.compare(inputs,num);
+        //then
+        assertThat(result,is("1A0B"));
+    }
 }
